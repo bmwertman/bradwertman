@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="styles/8b7aa06d.main.css">
+</head>
+  <body ng-app="bradwertmanApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header>
+      <div class="col-md-offset-1" id="header-text">
+        <h1 id="headline">Brad Wertman ~ Web Developer</h1>
+        <h3 id="tagline">Efficiency aficionado & craftsman of the countermeasure</h3>
+      </div>
+      <div class="nav-bar" id="desktop-nav">
+        <a ui-sref="work">
+          <figure class="nav-btn">
+            <div class="circle ball"><h3 class="ball-text">My Work</h3><div class="shadow-sphere shadow-ellipse"></div></div>
+          </figure>
+        </a>
+        <a ui-sref="resume">
+          <figure class="nav-btn">
+           <div class="circle ball"><h3 class="ball-text">My Resume</h3><div class="shadow-sphere shadow-ellipse"></div></div>
+          </figure>
+        </a>
+        <a ui-sref="contact">
+          <figure class="nav-btn">
+           <div class="circle ball"><h3 class="ball-text">Contact Me</h3><div class="shadow-sphere shadow-ellipse"></div></div>
+          </figure>
+        </a>
+        <!-- <a href="skills.html">
+          <figure class="two columns offset-by-one nav-btn">
+            <div class="circle ball" ><h3 class='ball-text'>My Skills</h3></div>
+          </figure>
+        </a> -->
+        <a ui-sref="home">
+          <figure class="nav-btn">
+            <div class="circle ball"><h3 class="ball-text">About Me</h3><div class="shadow-sphere shadow-ellipse"></div></div>
+          </figure>
+        </a>
+      </div>
+      <div class="btn-group" id="mobile-nav">
+        <button type="button" class="btn btn-default dropdown-toggle btn-lg" data-toggle="dropdown">
+          <span class="glyphicon glyphicon-align-justify"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+          <li><a ui-sref="views/main.html">ABOUT</a></li>
+          <li><a ui-sref="views/work.html">WORK</a></li>
+          <li><a ui-sref="views/resume.html">RESUME</a></li>
+          <li><a ui-sref="views/contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+
+    <div ui-view=""></div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-49130130-1', 'bradwertman.com');
+       ga('send', 'pageview');
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+        <script src="scripts/ce97bf78.plugins.js"></script>
+
+        <script src="scripts/cd113333.modules.js"></script>
+
+        <script src="scripts/11a6c93c.scripts.js"></script>
+</body>
+</html>
