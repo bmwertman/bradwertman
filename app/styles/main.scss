@@ -1,0 +1,628 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import "bootstrap-sass/lib/bootstrap";
+
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+/*global styles*/
+/************************************************************************/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 5px;
+    text-indent: 30px;
+}
+
+/*Header styles*/
+/*************************************************************************/
+
+header {
+    margin: 0 auto;
+    background-color: #4ba6dd;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: -2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#header-text{
+    vertical-align: bottom;
+    display: inline-block;
+    width: 561px;
+    margin-bottom: 2px;
+}
+
+#headline{
+    margin: 0;
+    display: block;
+}
+
+#tagline{
+    font-family: 'Playball', cursive;
+    margin: 0;
+    display: block;
+    padding-bottom: 8px;
+}
+
+
+.text-bckgrnd {
+    background-color: #eff3f6;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1.4em;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*about page image slider*/
+/******************************************************************************/
+#slide-box{
+    width: 2060px;
+    margin: 0;
+}
+
+#about #slide-box img{
+    margin: 0 -0.12em;
+    width: 399px;
+    object-fit: contain;
+}
+
+#about #slider {
+    width: 399px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 63px;
+    border-radius: 20px;
+}
+
+div#slider figure {
+    position: relative;
+    animation: 40s slide infinite;
+}
+
+@keyframes slide {
+    20% { left: 0; }
+    25% { left: -399px; }
+    45% { left: -399px; }
+    50% { left: -798px; }
+    70% { left: -798px; }
+    75% { left: -1197px; }
+    100% { left: -1197px; }
+    0% { left: 0; }
+}
+/*site navigation*/
+/*************************************************************************************/
+.nav-bar{
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-bar figure{
+    margin: 0 20px;
+}
+
+
+
+.nav-btn{
+    float: left;
+    margin: 0;
+}
+
+.ball{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(50% 120%, circle cover, #323232, #0a0a0a 80%, #000000 100%)
+}
+
+.shadow-sphere {
+  box-shadow: inset 50px -50px 100px hsla(0, 0%, 0%, .6);
+}
+
+.shadow-ellipse { position: relative;}
+
+.shadow-ellipse:after {
+  position: absolute;
+  content: "";
+  left: 27%;
+  right: 16%;
+  box-shadow: 11px 85px 20px 4px hsla(0, 0%, 0%, .275);
+  transform:rotate(-17deg);
+}
+
+.ball:before{
+    content: "";
+    top: 1%;
+    left: 5%;
+    bottom: 2.5%;
+    opacity: 0.6;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    background:
+    radial-gradient(50% 120%, circle cover, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+    filter: blur(5px);
+    z-index: 2;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    margin: 0;
+    color: white;
+    background: radial-gradient(35px 35px, circle, #5cabff, #000);
+}
+
+.ball .ball-text{
+  content: "My Work";
+  position: absolute;
+  text-align: center;
+  width: 61px;
+  left: 8px;
+  margin: 0;
+  top: 17px;
+  color: white;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+/* Responsive Design */
+/***********************************************************************************************************/
+
+@media (max-width: 1322px){
+    header{
+        height: 160px;
+    }
+}
+
+@media (max-width: 1321px){
+    #header-text, #desktop-nav{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px){
+
+    header{
+        position: fixed;
+        top: 0;
+    }
+
+
+    #about #slider {
+        display: block;
+    }
+
+    #resume{
+        padding: 185px 20px 20px 60px;
+    }
+
+    #form-div{
+        position: fixed;
+        top: 185px;
+        left: 5%;
+        margin-right: 20px;
+    }
+
+    #about{
+        padding-top: 160px;
+    }
+
+    #about, #about .slider{
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #about #slider{
+        margin: 20px auto;
+    }
+
+    #about #slider img{
+        margin: 0 -0.1em;
+    }
+}
+
+@media (min-width: 601px){
+
+
+    #mobile-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+
+    header{
+        height: 65px;
+    }
+
+    #header-text{
+        margin: 10px 10px;
+        width: 386px;
+        float: left;
+    }
+
+    #headline{
+        font-size: 1.85em;
+    }
+
+    #tagline{
+        font-size: 1.15em;
+    }
+
+    #desktop-nav{
+        display: none;
+    }
+
+    #mobile-nav{
+        display: block;
+        float: right;
+        margin: 10px 10px;
+    }
+
+    #about{
+        padding-top: 60px;
+    }
+
+    #about p{
+        font-size: 0.9em;
+    }
+
+    #my-work > div:nth-child(1){
+        margin-top: 95px;
+    }
+
+}
+
+@media (max-width: 478px){
+
+    #header-text{
+        width: 298px;
+    }
+
+    #headline{
+        font-size: 1.4em;
+    }
+
+    #tagline{
+        display: none;
+    }
+
+    #about{
+        padding-top: 59px;
+    }
+}
+
+/*my work page*/
+/**********************************************************************************/
+
+.work-box{
+    max-height: 775px;
+    width: 400px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px
+}
+.work-box h3{
+    margin: 0 20px 0 0;
+}
+
+#my-work{
+    margin: 20px auto;
+    width: 840px;
+}
+#my-work img{
+    max-height: 238px;
+    margin-right: 5px;
+}
+#my-work .work-slider{
+    width: 3625px
+}
+
+.slide-box{
+    position: relative;
+    animation: 40s work-slide infinite;
+}
+
+@keyframes work-slide {
+    20% { left: 0; }
+    25% { left: -391px; }
+    45% { left: -391px; }
+    50% { left: -782px; }
+    70% { left: -782px; }
+    75% { left: -1173px; }
+    100% { left: -1173px; }
+    0% { left: 0; }
+}
+
+@media (max-width: 992px) {
+
+    #my-work{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    #my-work > div:nth-child(2){
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+
+    #my-work > div:nth-child(1){
+        margin-top: 185px;
+    }
+
+}
+/*resume page*/
+/****************************************************************************************/
+
+#resume {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    z-index: -500;
+}
+/* rules slideout */
+#resume-share {
+  position: fixed;
+  width:170px;
+  transition-duration: 0.3s;
+}
+
+.resume-button{
+    background-color:#e1f3fc;
+    color: black;
+    border-radius: 0.9em;
+    font-size: 1.3em;
+    font-style: bolder;
+    font-weight: bold;
+    text-align: center;
+    height: 35px;
+    width: 130px;
+    margin:10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 8px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.resume-button p{
+    display: inline-block;
+
+}
+.social-icon{
+    width: 20px;
+    display: inline-block;
+}
+
+#slideout_inner > a:nth-child(2) > img {
+    margin-left: 2px;
+}
+
+#slideout_inner {
+    background-color: #4ba6dd;
+    width: 190px;
+    height: 199px;
+    position: fixed;
+    top: 258px;
+    left: -153px;
+    padding-top: 15px;
+    border-radius: 0 0.7em 0.7em 0;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    transition-duration: 0.3s;
+}
+
+h4#tab:hover #slideout_inner, h4#tab {
+  left:-153px;
+}
+
+#resume-share:hover #slideout_inner, h4#tab {
+  left: 0;
+}
+
+h4#tab{
+    position: absolute;
+    top: 71px;
+    left: 72px;
+    width: 199px;
+    height: 38px;
+    padding: 4px 18px;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+
+/*contact form*/
+/**************************************************************************************/
+
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+#feedback-page{
+    text-align:center;
+}
+
+#form-main {
+    max-width: 800px;
+    margin: 115px auto 25px;
+    background-color: #4ba6dd;
+    padding-left:35px;
+    padding-right:35px;
+    padding-top:35px;
+    padding-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    transition-duration: 0.3s;
+}
+
+.feedback-input {
+    color:#3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 16px 13px 13px 54px;
+    margin-bottom: 10px;
+    width:100%;
+    box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+#email, #name {
+    height: 40px;
+    padding-left: 57px;
+}
+
+.focused{
+    color:#30aed6;
+    border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#name:focus{
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+  background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email{
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus{
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+  background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment{
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+#form-div label{
+    font-size: 18px;
+}
+
+#form-div img{
+    width: 15px;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    background-color:white;
+}
+
+#button-blue{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float:left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor:pointer;
+    background-color: #3c3c3c;
+    color:white;
+    font-size:24px;
+    padding-top:22px;
+    padding-bottom:22px;
+    transition: all 0.3s;
+  font-weight:700;
+}
+
+#button-blue:hover{
+    background-color: rgba(0,0,0,0);
+    color: #0493bd;
+}
+
+.submit:hover {
+    color: #3498db;
+}
+
+#form-div .submit{
+    margin-top: 10px;
+}
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-main{
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
