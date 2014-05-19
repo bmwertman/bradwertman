@@ -261,6 +261,7 @@ div#slider figure {
 
     header{
         height: 65px;
+        padding-top: 10px;
     }
 
     #header-text{
@@ -288,7 +289,7 @@ div#slider figure {
     }
 
     #mobile-nav > ul > li > a{
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: bold;
         text-align: center;
         border-bottom: 1px solid black;
@@ -334,7 +335,6 @@ div#slider figure {
         width: 312px;
         margin: 0 auto;
         float: none;
-        margin-top: 10px;
     }
 
     #desktop-header-txt{
@@ -346,6 +346,10 @@ div#slider figure {
         font-size: 1.2em;
         font-weight: bold;
         vertical-align: top;
+    }
+
+    .dropdown-menu {
+        border-radius: 0 0 9px 9px;
     }
 
     .glyphicon{
@@ -661,10 +665,7 @@ input:focus, textarea:focus {
 
 @media only screen and (max-width: 580px) {
     #form-main{
-        left: 3%;
-        margin-right: 3%;
-        width: 88%;
-        margin-left: 0;
+        margin: 0 auto;
         padding-left: 3%;
         padding-right: 3%;
     }
