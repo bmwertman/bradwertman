@@ -64,7 +64,7 @@
           <span class="mobile-header-txt">Brad Wertman ~ Web Developer</span><span class="glyphicon glyphicon-collapse-down"></span>
         </button>
         <ul class="dropdown-menu pull-right">
-          <li><a ui-sref="main">ABOUT</a></li>
+          <li><a ui-sref="home">ABOUT</a></li>
           <li><a ui-sref="work">WORK</a></li>
           <li><a ui-sref="resume">RESUME</a></li>
           <li><a ui-sref="contact">CONTACT</a></li>
@@ -72,20 +72,16 @@
       </div>
     </header>
 
-
-
     <div ui-view=""></div>
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-49130130-1', 'bradwertman.com');
-       ga('send', 'pageview');
+      ga('create', 'UA-49130130-1', 'bradwertman.com');
+      ga('send', 'pageview');
     </script>
 
     <script src="bower_components/jquery/jquery.js"></script>
