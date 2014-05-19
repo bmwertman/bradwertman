@@ -277,14 +277,33 @@ div#slider figure {
         font-size: 1.15em;
     }
 
-    #desktop-nav{
-        display: none;
-    }
-
     #mobile-nav{
         display: block;
         float: right;
         margin: 10px 10px;
+    }
+
+    .dropdown-menu{
+        padding: 0;
+    }
+
+    #mobile-nav > ul > li > a{
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    #mobile-nav > ul > li:nth-child(4) > a{
+        border-bottom: none;
+    }
+
+    .glyphicon {
+        font-size: 1.9em;
+    }
+
+    .mobile-header-txt, .glyphicon-collapse-down, #desktop-nav{
+        display: none;
     }
 
     #about{
@@ -304,11 +323,36 @@ div#slider figure {
 @media (max-width: 478px){
 
     #header-text{
-        width: 298px;
+        display: none;
     }
 
     #headline{
-        font-size: 1.4em;
+        display: none;
+    }
+
+    #mobile-nav, .dropdown-menu{
+        width: 312px;
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+    }
+
+    #desktop-header-txt{
+        display: none;
+    }
+
+    .mobile-header-txt{
+        display: initial;
+        font-size: 1.2em;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .glyphicon{
+        display: initial;
+        margin-left: 3px;
+        font-size: 1.8em;
+        padding-bottom: 5px;
     }
 
     #tagline{

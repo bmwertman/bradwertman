@@ -3,7 +3,8 @@
 
 angular.module('bradwertmanApp', [
   'ngSanitize',
-  'ui.router'
+  'ui.router',
+  'ngTouch'
 ])
 
 .config(function ($stateProvider, $urlRouterProvider) {
