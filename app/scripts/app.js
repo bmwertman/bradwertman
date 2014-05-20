@@ -7,7 +7,7 @@ angular.module('bradwertmanApp', [
   'ngTouch'
 ])
 
-.config(function ($stateProvider, $urlRouterProvider) {
+.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
   //delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
   $stateProvider
@@ -36,6 +36,7 @@ angular.module('bradwertmanApp', [
     controller: 'HeaderCtrl'
   })
   $urlRouterProvider.otherwise('/');
+  $locationProvider.html5Mode(true);
 })
 
 // Nav button animations
