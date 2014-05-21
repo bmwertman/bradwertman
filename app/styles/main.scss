@@ -34,6 +34,7 @@ p{
 /*************************************************************************/
 
 header {
+    height: 90px;
     margin: 0 auto;
     background-color: #4ba6dd;
     width: 100%;
@@ -109,10 +110,11 @@ div#slider figure {
 /*************************************************************************************/
 .nav-bar{
     width: 500px;
-    display: inline-block;
     vertical-align: middle;
     margin-top: 10px;
     margin-bottom: 10px;
+    position: absolute;
+    top: -8px;
 }
 
 .nav-bar figure{
@@ -173,7 +175,7 @@ div#slider figure {
     width: 85px;
     margin: 0;
     color: white;
-    background: radial-gradient(circle at 35px, #5cabff, #000);
+    background: radial-gradient(circle at 35px, #5cabff, #000000);
 }
 
 .ball .ball-text{
@@ -209,29 +211,13 @@ div#slider figure {
 
 @media (max-width: 992px){
 
-    header{
-        position: fixed;
-        top: 0;
-    }
-
 
     #about #slider {
         display: block;
     }
 
     #resume{
-        padding: 185px 20px 20px 60px;
-    }
-
-    #form-div{
-        position: fixed;
-        top: 185px;
-        left: 5%;
-        margin-right: 20px;
-    }
-
-    #about{
-        padding-top: 160px;
+        padding: 25px 20px 20px 60px;
     }
 
     #about, #about .slider{
@@ -261,11 +247,12 @@ div#slider figure {
 
     header{
         height: 65px;
+        padding-top: 10px;
     }
 
     #header-text{
         margin: 10px 10px;
-        width: 390px;
+        width: 386px;
         float: left;
     }
 
@@ -306,16 +293,12 @@ div#slider figure {
         display: none;
     }
 
-    #about{
-        padding-top: 60px;
-    }
-
     #about p{
         font-size: 0.9em;
     }
 
-    #my-work > div:nth-child(1){
-        margin-top: 95px;
+    #resume-share > #slideout_inner{
+        top: 104px;
     }
 
 }
@@ -362,8 +345,8 @@ div#slider figure {
         display: none;
     }
 
-    #about{
-        padding-top: 59px;
+    #my-work > div:nth-child(1){
+        margin-top: 25px;
     }
 }
 
@@ -421,13 +404,6 @@ div#slider figure {
     }
 }
 
-@media (min-width: 601px) and (max-width: 992px) {
-
-    #my-work > div:nth-child(1){
-        margin-top: 185px;
-    }
-
-}
 /*resume page*/
 /****************************************************************************************/
 
@@ -478,7 +454,7 @@ div#slider figure {
     width: 190px;
     height: 199px;
     position: fixed;
-    top: 258px;
+    top: 173px;
     left: -153px;
     padding-top: 15px;
     border-radius: 0 0.7em 0.7em 0;
@@ -522,7 +498,7 @@ h4#tab{
 
 #form-main {
     max-width: 800px;
-    margin: 20px auto 25px;
+    margin: 25px auto;
     background-color: #4ba6dd;
     padding-left:35px;
     padding-right:35px;
@@ -662,9 +638,11 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
+
+
 @media only screen and (max-width: 580px) {
     #form-main{
-        margin: 0 auto;
+        margin: 25px auto;
         padding-left: 3%;
         padding-right: 3%;
     }
