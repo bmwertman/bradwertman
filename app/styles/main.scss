@@ -115,6 +115,7 @@ div#slider figure {
     margin-bottom: 10px;
     position: absolute;
     top: -8px;
+    right: 13%;
 }
 
 .nav-bar figure{
@@ -199,6 +200,10 @@ div#slider figure {
 @media (max-width: 1322px){
     header{
         height: 160px;
+    }
+
+    .nav-bar{
+        position: initial;
     }
 }
 
